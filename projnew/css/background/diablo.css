@@ -1,0 +1,13 @@
+
+body::before{
+    background-image: url(/img/diablotras.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+    width: 100%;
+    background-size: 100%;
+    content: "";
+    height: 100vh;
+    z-index: -2;
+    opacity: 0.3;
+}

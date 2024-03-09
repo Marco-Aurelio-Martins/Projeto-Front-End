@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>GameReview</title>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <ul class="esquerda">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Sobre</a></li>
+            </ul>
+            <ul class="direita">
+                <li>           
+                    <div id="busca">     
+                        <input type="search" name="busca" id="input"  placeholder="Buscar..." onkeypress="checkEnter(event)">
+                        <img src="assets/lupa.png" alt="lupa" id="lupa" onclick="busca()">
+                    </div>
+                    <ul id="resultadoPesquisa"></ul>
+                </li>
+            </ul>   
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Carrosel -->
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+
+                <div class="slide first">
+                    <img src="img/thelastofus.png" alt="hollow-knight">
+                </div>
+                <div class="slide">
+                    <img src="img/rdr.png" alt="hollow-knight">
+                </div>
+                <div class="slide">
+                    <img src="img/hades.png" alt="hollow-knight">
+                </div>
+                <div class="slide">
+                    <img src="img/elden-ring.png" alt="hollow-knight">
+                </div>
+            
+
+                <div class="manual-navagation">
+                    <label for="radio1" class="manual-btn btn1"></label>
+                    <label for="radio2" class="manual-btn btn2"></label>
+                    <label for="radio3" class="manual-btn btn3"></label>
+                    <label for="radio4" class="manual-btn btn4"></label>
+                </div>
+            </div>
+        </div>
+        <!-- END Carrosel -->
+        <div class="titulo">
+            <h2 style="color: aliceblue;">Jogos recomendados</h2>
+        </div>
+        <div class="jogos">
+            <a href="html/minecraft.html" class="container">
+                <img src="img/minecraft.jpg">
+            </a>
+            <a  href="html/diablo.html" class="container">
+                <img src="img/diablo.png">
+            </a>
+            <a  href="" class="container">
+                <img src="img/far_cry.jpg">
+            </a>
+            <a  href="" class="container">
+                <img src="img/gtav.png">
+            </a>
+            <a  href="" class="container">
+                <img src="img/black_flag.png">
+            </a>
+            <a  href="" class="container">
+                <img src="img/rdr_capa.png">
+            </a>
+            <a  href="" class="container">
+                <img src="img/skyrim.png">
+            </a>
+            <a  href="" class="container">
+                <img src="img/tlou.png">
+            </a>
+            <a  href="" class="container">
+                <img src="img/alan.jpg">
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>COPYRIGHT BY @MARCO.CODEV</p>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

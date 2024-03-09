@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    background-color: black;
+}
+
+
+img#controle{
+    position: fixed;
+    margin-top: 25%;
+    top: 0;
+    z-index: -1;
+    opacity: 0.06;
+    left: -15%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+a:hover{
+    color: rgba(255, 255, 255, 0.459);
+}
+
+
+/* HEADER */
+
+header{
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    transition: .5s;
+    color: white;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul.esquerda{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav li{
+    padding: 0px 35px;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex; 
+}
+
+nav ul.direita{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+div#busca{
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    border-radius: 25px;
+    height: 20px;
+    margin-right: 25px;
+    padding: 15px 10px;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.3s ease; 
+}
+
+div#busca input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 0px;
+    height: 30px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+div#busca img{
+    height: 30px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+
+ul#resultadoPesquisa{
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    width: 255px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+ul#resultadoPesquisa li:first-child{
+    padding: 10px;
+    font-size: 18px;
+}
+
+ul#resultadoPesquisa li{
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
+
+ul#resultadoPesquisa li:first-child a{
+    padding: 10px 15px;
+    margin-top: 45px;
+}
+
+ul#resultadoPesquisa li a{
+    color: black;
+    padding: 0px 15px 10px;
+    font-weight: 600;
+}
+
+ul#resultadoPesquisa li a:hover{
+    color: rgba(0, 0, 0, 0.445);
+}
+
+
+
+/* END HEADER */
+
+/* MAIN */
+
+main{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column ;
+    margin-top: 25px;
+}
+
+div.descricao{
+    width: 80%;
+    display: flex;
+}
+
+div.imagem{
+    width: 30%;
+}
+
+div.imagem img{
+    border-radius: 15px;
+    width: 300px;
+}
+
+div.escrita{
+    color: #fff;
+    width: 70%;
+}
+
+div.escrita p{
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+div.escrita div{
+    height: 1px;
+    width: 100%;
+    background-color: #ffffff4d;
+    border-radius: 100%;
+
+}
+
+div.sobre{
+    width: 85%;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.sobre > div{
+    width: 50%;
+    padding: 0px 20px;
+}
+
+div.sobre p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.sobre p:first-child{
+    margin-top: 0px;
+}
+
+div.aplicativos{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+div.aplicativos div{
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 70px;
+    height: 80px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+div.aplicativos div:hover{
+    opacity: 0.6;
+}
+
+div.aplicativos img{
+    width: 70px;
+    height: 80px;
+}
+
+div.baixe{
+    width: 85%;
+    margin-top: 100px;
+    display: flex;
+}
+
+div.baixe>div.esq{
+    width: 45%;
+}
+
+div.spotify {
+    width: 55%;
+}
+
+div.spotify iframe{
+    margin-top: 10px;
+}
+
+div.avaliacoes img{
+    width: 160px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+h2.titulo_avaliacoes{
+    margin-top: 45px;
+}
+
+h2.trailer{
+    margin-top: 45px;
+    margin-bottom: 5px;
+}
+
+div.avaliacoes img:hover{
+    opacity: 0.5;    
+}
+
+div.avaliacoes div{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+div.avaliacoes div p{
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 10px;
+    color: gold;
+}   
+
+div.avaliacoes div.estrelas{
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+div.avaliacoes div.segunda{
+    margin-left: 25px;
+}
+
+span{
+   font-size: 30px;
+}
+
+span.estrela{
+    color: gold;
+}
+
+span.estrela_nao_prenchida{
+    color: gray;
+}
+
+ul.requisitos{
+    margin-left: 20px;
+}
+
+ul.requisitos li{
+    margin-top: 15px;
+}
+
+div.avaliacoes div.estrelas_usuarios {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+div.avaliacaouser{
+    margin-top: 70px;
+    width: 85%;
+}
+
+textarea#user_avali{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+h2{
+    color: #fff;
+    font-size: 30px;
+}
+
+input#enviar{
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    font-weight:500;
+
+}
+
+input#enviar:hover{
+    background-color: #ffffffa1;
+}
+
+footer{
+    background-color: #ffffffde;
+    color: black;
+    height: 80px;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 15px;
+}
+
+div.premios{
+    margin-top: 35px;
+    color: #fff;
+}
+
+div.premios ul{
+    list-style: none;
+    width: 90%;
+    line-height: 25px;
+}
+
+div.premios ul li{
+    margin-top: 10px;
+
+}
+
+.estrelameio {
+    position: relative;
+    display: inline-block;
+    color: gray;
+}
+
+.estrelameio:before {
+    content: '\2605'; /* Código unicode para uma estrela vazia */
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    width: 50%; /* Metade da largura da estrela */
+    color: gold; /* Cor da metade da estrela */
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/paginas_jogos.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/background/diablo.css">
+    <title>Minecraft - GameReview</title>
+</head>
+<body>
+    
+    <header id="header">
+        <nav>
+            <ul class="esquerda">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Sobre</a></li>
+            </ul>
+            <ul class="direita">
+                <li>           
+                    <div id="busca">     
+                        <input type="search" name="busca" id="input"  placeholder="Buscar..." onkeypress="checkEnter(event)">
+                        <img src="/assets/lupa.png" alt="lupa" id="lupa" onclick="busca()">
+                    </div>
+                    <ul id="resultadoPesquisa"></ul>
+                </li>
+            </ul>   
+        </nav>
+    </header>
+    
+    <main>
+        <div class="descricao">
+            <div class="imagem">
+                <img src="/img/diablo.png" alt="minecraft">
+            </div>
+            <div class="escrita">
+                <h1>Diablo IV</h1>
+                <p>Diablo IV é um jogo de RPG de ação desenvolvido e publicado pela Blizzard Entertainment, sendo o quarto título principal da série Diablo. O jogo se passa no mundo sombrio e gótico de Sanctuary, onde os jogadores enfrentam forças demoníacas e exploram vastas terras em busca de poder e glória.</p>
+                <div></div>
+                <p>O enredo de Diablo IV gira em torno do retorno da vilã Lilith, filha de Mephisto, que busca trazer terror e destruição ao mundo. Os jogadores devem enfrentar não apenas Lilith, mas também outras ameaças demoníacas, incluindo os adoradores do culto de Rathma e os exércitos demoníacos liderados por Lilith.</p>
+                <div></div>
+                <p>O jogo apresenta uma jogabilidade envolvente e visceral, com ação intensa, combate fluído e uma variedade de classes de personagens para escolher, cada uma com habilidades únicas e árvores de talentos para personalização. Além disso, Diablo IV promete um mundo aberto e dinâmico, com eventos aleatórios, masmorras geradas proceduralmente e um sistema de clima que afeta o ambiente e o combate.</p>
+            </div>
+        </div>
+        <div class="sobre">
+            <div>
+                <p><strong>Desenvolvedora:</strong> <a href="/">Actvision Blizzard</a></p>
+                <p><strong>Data de lançamento:</strong> 05/07/2023</p>
+                <p><strong>Gêneros:</strong> RPG de ação</p>
+                <p><strong>Crossplay:</strong> Possui Crossplay entre todas as plataformas</p>
+                <p><strong>Edições:</strong> Edição Padrão, Edição Digital Deluxe, Edição Ultimate</p>
+                <p><strong>Tempo de jogo:</strong> 80 horas</p>
+            </div>
+            <div>
+                <h2>Requisitos mínimos</h2>
+                <ul class="requisitos">
+                    <li><strong>Sistema operacional:</strong> Windows 10 (64 bits) ou macOS 10.15 Catalina (ou superior)</li>
+                    <li><strong>Processador:</strong> Intel Core i5 ou AMD Ryzen 5</li>
+                    <li><strong>Memória RAM:</strong> 8 GB</li>
+                    <li><strong>Placa de vídeo:</strong> NVIDIA GeForce GTX 970 / AMD Radeon RX 480</li>
+                    <li><strong>Armazenamentos:</strong> Pelo menos 50 GB de espaço livre no disco rígido ou SSD</li>
+                </ul>
+            </div>
+        </div>
+            <div class="baixe">
+                <div class="esq">
+                    <h2>Plataformas</h2>
+                    <div class="aplicativos"> 
+                        <a href="https://www.xbox.com/pt-br/games/minecraft?ef_id=_k_CjwKCAiA3JCvBhA8EiwA4kujZqm75EP9au3mS1dVPaoS6rSfSA8MYJfEDv0cM-gvSZumvqhIZixOIRoCSUAQAvD_BwE_k_&OCID=AIDcmmaigrfm8i_SEM__k_CjwKCAiA3JCvBhA8EiwA4kujZqm75EP9au3mS1dVPaoS6rSfSA8MYJfEDv0cM-gvSZumvqhIZixOIRoCSUAQAvD_BwE_k_&gad_source=1&gclid=CjwKCAiA3JCvBhA8EiwA4kujZqm75EP9au3mS1dVPaoS6rSfSA8MYJfEDv0cM-gvSZumvqhIZixOIRoCSUAQAvD_BwE">
+                        <div style="background-color: #0d6601;">
+                            <img src="/img/xbox.png" alt="xbox">
+                        </div>
+                        </a>
+                        <a href="https://store.playstation.com/pt-br/product/UP4433-CUSA00744_00-MINECRAFTPS40001">
+                        <div style="background-color: rgb(0, 14, 92);">
+                            <img src="/img/psn.png" alt="psn">
+                        </div>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.mojang.minecraftpe">
+                        <div style="background-color: #132940;">
+                            <img src="/img/Steam_Logo.png" alt="steam">
+                        </div>
+                        </a>
+                        <a href="https://apps.apple.com/br/app/minecraft/id479516143">
+                        <div style="background-color: #0074e0">
+                            <img src="/img/battlenet.png" alt="apple">
+                        </div>
+                        </a>
+                    </div>
+                    <div class="premios">
+                        <h2>Prêmios</h2>
+                        <ul>
+                            <li><strong>Best Debut</strong> - Game Developers Choice Awards 2011</li>
+                            <li><strong>Choice Video Game</strong> - Teen Choice Awards 2013</li>
+                            <li><strong>Prêmio BAFTA de Video Game</strong> - British Academy Children's Awards 2014</li>
+                            <li><strong>Best Family Game</strong>- The Game Awards 2014</li>
+                            <li><strong>Favorite Video Game</strong> - Nickelodeon Kids' Choice Awards 2016</li>
+                        </ul>
+                    </div>
+                    <h2 class="titulo_avaliacoes">Avaliações</h2>
+                    <div class="avaliacoes">
+                        <div>
+                            <img src="/img/IGN-Logo.png" alt="">
+                            <p>9.0/10.0</p>
+                            <div class="estrelas terceira">
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrelameio">&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avaliacoes">
+                        <div>
+                            <img src="/img/metacritc.png" alt="">
+                            <p>8.0/10.0</p>
+                            <div class="estrelas">
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela_nao_prenchida">&#9733;</span>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avaliacoes">
+                        <div>
+                            <img src="/img/techtudo.png" alt="">
+                            <p>5.0/5.0</p>
+                            <div class="estrelas segunda">
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spotify">
+                    <h2>Soundtrack</h2>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1of5HM6vfUTO8ecBEmxLxd?utm_source=generator&theme=0" width="100%" height="450x" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                    
+                    <h2 class="trailer">Trailer</h2>
+                    <iframe width="100%" height="370px" src="https://www.youtube.com/embed/vL44VbiSnpY?si=q3tGnE-gvw9pxuZy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                </div>
+            </div>
+            <div class="avaliacaouser">
+                <h2>Reviews dos usuários</h2>            
+                <textarea name="user_avali" id="user_avali" placeholder="Deixe sua review..."></textarea>
+                <input type="submit" value="Enviar" id="enviar">
+            </div>
+    </main>
+
+    <footer>
+        <p>COPYRIGHT BY @MARCO.CODEV</p>
+    </footer>
+
+    <script src="/script/paginas.js"></script>
+</body>
+</html>

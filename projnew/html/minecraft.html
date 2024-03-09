@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/paginas_jogos.css">
+    <link rel="stylesheet" href="/css/background/minecraft.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <title>Minecraft - GameReview</title>
+</head>
+<body>
+    
+    <header id="header">
+        <nav>
+            <ul class="esquerda">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Sobre</a></li>
+            </ul>
+            <ul class="direita">
+                <li>           
+                    <div id="busca">     
+                        <input type="search" name="busca" id="input"  placeholder="Buscar..." onkeypress="checkEnter(event)">
+                        <img src="/assets/lupa.png" alt="lupa" id="lupa" onclick="busca()">
+                    </div>
+                    <ul id="resultadoPesquisa"></ul>
+                </li>
+            </ul>   
+        </nav>
+    </header>
+    
+    <main>
+        <div class="descricao">
+            <div class="imagem">
+                <img src="/img/minecraft.jpg" alt="minecraft">
+            </div>
+            <div class="escrita">
+                <h1>Minecraft</h1>
+                <p>Minecraft, o fenômeno dos videogames que cativou milhões em todo o mundo, é uma verdadeira obra-prima da imaginação e da liberdade criativa. Desde seu lançamento em 2011, este título da Mojang Studios se tornou um marco na indústria dos jogos, conquistando uma base de fãs fervorosa e inspirando inúmeras criações dentro e fora do jogo.</p>
+                <div></div>
+                <p>O estilo visual único de Minecraft, com seus blocos pixelizados e cores vibrantes, é instantaneamente reconhecível e atemporal. Enquanto alguns podem considerá-lo simples, sua simplicidade é o que o torna tão charmoso e acessível para jogadores de todas as idades.</p>
+                <div></div>
+                <p>Uma das maiores forças de Minecraft é sua comunidade apaixonada e criativa. Através de mods, texturas personalizadas, mapas e criações originais, os jogadores continuam a expandir e enriquecer o universo de Minecraft de maneiras infinitas. A capacidade de personalizar e modificar o jogo permite que cada jogador encontre algo que ressoe com seus interesses e paixões.</p>
+            </div>
+        </div>
+        <div class="sobre">
+            <div>
+                <p><strong>Desenvolvedora:</strong> <a href="/">Mojang Studios</a> (desde 2014)</p>
+                <p><strong>Data de lançamento:</strong> 18/11/2011</p>
+                <p><strong>Gêneros:</strong> Sandbox, Sobrevivência</p>
+                <p><strong>Crossplay:</strong> Possui Crossplay entre todas as plataformas (Badrock Edition)</p>
+                <p><strong>Edições:</strong> Java Edition (PC), Badrock Edition (todas as plataformas) e Pocket Edition (mobile)</p>
+            </div>
+            <div>
+                <h2>Requisitos mínimos</h2>
+                <ul class="requisitos">
+                    <li><strong>Sistema operacional:</strong> Windows 10 14393.0 ou superior</li>
+                    <li><strong>Processador:</strong> Intel Celeron J4105 ou AMD FX-4100</li>
+                    <li><strong>Memória RAM:</strong> 4 GB</li>
+                    <li><strong>Placa de vídeo:</strong> Intel HD Graphics 4000 ou AMD Radeon R5</li>
+                </ul>
+            </div>
+        </div>
+            <div class="baixe">
+                <div class="esq">
+                    <h2>Plataformas</h2>
+                    <div class="aplicativos"> 
+                        <a href="https://www.xbox.com/pt-br/games/minecraft?ef_id=_k_CjwKCAiA3JCvBhA8EiwA4kujZqm75EP9au3mS1dVPaoS6rSfSA8MYJfEDv0cM-gvSZumvqhIZixOIRoCSUAQAvD_BwE_k_&OCID=AIDcmmaigrfm8i_SEM__k_CjwKCAiA3JCvBhA8EiwA4kujZqm75EP9au3mS1dVPaoS6rSfSA8MYJfEDv0cM-gvSZumvqhIZixOIRoCSUAQAvD_BwE_k_&gad_source=1&gclid=CjwKCAiA3JCvBhA8EiwA4kujZqm75EP9au3mS1dVPaoS6rSfSA8MYJfEDv0cM-gvSZumvqhIZixOIRoCSUAQAvD_BwE">
+                        <div style="background-color: #0d6601;">
+                            <img src="/img/xbox.png" alt="xbox">
+                        </div>
+                        </a>
+                        <a href="https://store.playstation.com/pt-br/product/UP4433-CUSA00744_00-MINECRAFTPS40001">
+                        <div style="background-color: rgb(0, 14, 92);">
+                            <img src="/img/psn.png" alt="psn">
+                        </div>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.mojang.minecraftpe">
+                        <div>
+                            <img src="/img/logo_playsotre.png" alt="playstore">
+                        </div>
+                        </a>
+                        <a href="https://apps.apple.com/br/app/minecraft/id479516143">
+                        <div style="  background: -webkit-linear-gradient(#05cafb, #0467f1)">
+                            <img src="/img/aplle.png" alt="apple">
+                        </div>
+                        </a>
+                        <a href="https://www.minecraft.net/pt-br/download">
+                        <div style="background-color: #3cb02c;">
+                            <img src="/img/mine.net.png" alt="mine.net">
+                        </div>
+                        </a>
+                        <a href="https://www.nintendo.com/pt-br/store/products/minecraft-switch/">
+                        <div style="background-color: #e7000a; width: auto;">
+                            <img src="/img/Nintendo-logo.png" style="width: 100%;" alt="nintendo">
+                        </div>
+                         </a>
+                    </div>
+                    <div class="premios">
+                        <h2>Prêmios</h2>
+                        <ul>
+                            <li><strong>Best Debut</strong> - Game Developers Choice Awards 2011</li>
+                            <li><strong>Choice Video Game</strong> - Teen Choice Awards 2013</li>
+                            <li><strong>Prêmio BAFTA de Video Game</strong> - British Academy Children's Awards 2014</li>
+                            <li><strong>Best Family Game</strong>- The Game Awards 2014</li>
+                            <li><strong>Favorite Video Game</strong> - Nickelodeon Kids' Choice Awards 2016</li>
+                        </ul>
+                    </div>
+                    <h2 class="titulo_avaliacoes">Avaliações</h2>
+                    <div class="avaliacoes">
+                        <div>
+                            <img src="/img/IGN-Logo.png" alt="">
+                            <p>9.0/10.0</p>
+                            <div class="estrelas terceira">
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrelameio">&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avaliacoes">
+                        <div>
+                            <img src="/img/metacritc.png" alt="">
+                            <p>8.0/10.0</p>
+                            <div class="estrelas">
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela_nao_prenchida">&#9733;</span>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avaliacoes">
+                        <div>
+                            <img src="/img/techtudo.png" alt="">
+                            <p>5.0/5.0</p>
+                            <div class="estrelas segunda">
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>
+                                <span class="estrela">&#9733;</span>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spotify">
+                    <h2>Soundtrack</h2>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1mjddPuTpWVT4LIQvT7vFR?utm_source=generator&theme=0" width="100%" height="450px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <h2 class="trailer">Trailer</h2>
+                    <iframe width="100%" height="350px" src="https://www.youtube.com/embed/MmB9b5njVbA?si=ePfrly7h1AIBFfbK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>                
+                </div>
+            </div>
+            <div class="avaliacaouser">
+                <h2>Reviews dos usuários</h2>            
+                <textarea name="user_avali" id="user_avali" placeholder="Deixe sua review..."></textarea>
+                <input type="submit" value="Enviar" id="enviar">
+            </div>
+    </main>
+
+    <footer>
+        <p>COPYRIGHT BY @MARCO.CODEV</p>
+    </footer>
+
+    <script src="/script/paginas.js"></script>
+</body>
+</html>
