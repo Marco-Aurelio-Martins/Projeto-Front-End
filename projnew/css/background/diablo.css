@@ -1,13 +1,18 @@
-
 body::before{
     background-image: url(/img/diablotras.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: fixed;
+    position: absolute;
     width: 100%;
-    background-size: 100%;
+    background-position: center center;
+    background-size: 110%;
     content: "";
     height: 100vh;
     z-index: -2;
-    opacity: 0.3;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+body.scrolled::before {
+    background-size: 100%;
 }

@@ -52,3 +52,13 @@ function pesquisa() {
 
 
 document.getElementById('input').addEventListener('input', pesquisa);
+
+
+window.addEventListener('scroll', function() {
+    var scrolled = window.scrollY > 0; // Verifica se a página foi rolada
+    if (scrolled) {
+        document.body.classList.add('scrolled'); // Adiciona a classe 'scrolled' ao body
+    } else {
+        document.body.classList.remove('scrolled'); // Remove a classe 'scrolled' do body
+    }
+});
