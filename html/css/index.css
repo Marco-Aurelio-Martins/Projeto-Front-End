@@ -133,7 +133,7 @@ ul#resultadoPesquisa li{
 }
 
 ul#resultadoPesquisa li:first-child a{
-    padding: 10px 15px;
+    padding: 10px 15px 0px;
     margin-top: 45px;
 }
 
