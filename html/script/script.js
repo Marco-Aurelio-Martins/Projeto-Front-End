@@ -53,7 +53,7 @@ function busca() {
 var names= {
     'Minecraft': 'https://marco-aurelio-martins.github.io/Projeto-Front-End/html/minecraft.html',
     'Diablo IV': 'https://marco-aurelio-martins.github.io/Projeto-Front-End/',
-    'Far Cry': 'https://ominous-space-yodel-rjrrw6rqx773xrgw-3000.app.github.dev/html/farcry6.html'
+    'Far Cry 6': 'https://ominous-space-yodel-rjrrw6rqx773xrgw-3000.app.github.dev/html/farcry6.html'
 }
 
 function checkEnter(event) {
