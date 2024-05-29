@@ -6,3 +6,4 @@
 
 - O GameReview é um site onde se pode ver possiveis rewiews de vários jogos, assim como sua soundtrack, requisitos necessários para se rodar o game, prêmios vencidos, entre outras funcionalidades.
 
+### **Projeto ainda não finalizado**
